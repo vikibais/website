@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN🎉</title>
+    <style>
+    *{
+        padding: 0 px;
+        margin: 0 px;
+        background-color: rgb(173, 199, 228);
+    }
+    .cform{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 200px ;
+    }
+    .cinput{
+      font-size: 16px;
+      padding: 10px;
+    }
+    .cbutton{
+      font-size: 20px;
+      border: none;
+      background-color: rgb(226, 226, 226);
+      margin-top: 10px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-radius: 4px;
+    }
+    input{
+      border: none;
+      border-bottom: solid 1px;
+      font-size: 16px;
+      /* color: rgb(79, 79, 79); */
+      padding: 12px;
+    }
+
+    input:focus{
+      background-color: rgb(35, 60, 71);
+      color: white;
+      outline : none;
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="">
+      <form class="cform" method="POST"  >
+
+        <h1>LOGIN</h1>
+        <div class="cinput">
+          <h2>E-mail</h2>
+          <input type="text" id="_email" placeholder="Enter email" value="">
+        </div>
+        <div class="cinput">
+          <h2>Password</h2>
+          <input type="password" id = "_password" placeholder="Enter passowrd" value="">
+        </div>
+        <button class="cbutton"  type="button" id = "_button" onclick="rrun()" >Login</button>
+      </form>
+    </div>
+
+    <script>
+
+    function rrun() {
+
+      //var mail = document.querySelector("#_email").value;
+      var mail = document.getElementById("_email").value;
+      var pass = document.querySelector("#_password").value;
+
+      if(mail=="" && pass == "") {
+        alert("email and passowrd is compulsory");
+      }
+      else if(mail==""){
+        alert("email is compulsory");
+      }
+      else if (pass == "") {
+        alert("passowrd is compulsory");
+      }
+      else{
+        alert("done");
+      }
+    }
+
+
+
+    </script>
+  </body>
+</html>
